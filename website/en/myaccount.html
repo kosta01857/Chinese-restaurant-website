@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chinese Restaurant - My Basket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Free HTML5 Website Template by freehtml5.co"
+    />
+    <meta
+      name="keywords"
+      content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"
+    />
+    <meta name="author" content="freehtml5.co" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Date Time -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/load_navbar.js"></script>
+    <script src="js/load_footer.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/load_orders.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      .centered-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh; /* Adjusted height */
+      }
+      .form-container {
+        max-width: 800px;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 50px; /* Adjusted margin */
+      }
+      .form-container h2 {
+        margin-bottom: 20px;
+      }
+      .form-container .btn {
+        width: 100%;
+      }
+      input[type="email"],
+      input[type="password"] {
+        font-size: 16px; /* Adjust the font size as needed */
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        color: orange;
+		font-size:15px;
+      }
+      th {
+        background-color: red;
+      }
+      .remove-button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    </style>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload='fillOrders()'>
+    <div class="fh5co-loader"></div>
+    <div id="page">
+      <div id="fh5co-basket" class="fh5co-section centered-form">
+        <div class="form-container">
+          <div class="fh5co-heading animate-box">
+            <h2 style="color: orange">My Basket</h2>
+            <p>Here are the orders added to your basket:</p>
+          </div>
+          <table>
+            <tbody>
+              <!-- Add more rows dynamically or retrieve from backend -->
+            </tbody>
+          </table>
+          <div class="form-group">
+            <a href="checkout.html" class="btn btn-primary btn-outline btn-lg"
+              >Checkout</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

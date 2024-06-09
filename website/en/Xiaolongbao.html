@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Chinese Restaurant - Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Free HTML5 Website Template by freehtml5.co"
+        />
+        <meta
+          name="keywords"
+          content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"
+        />
+        <meta name="author" content="freehtml5.co" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Satisfy"
+          rel="stylesheet"
+        />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css/flexslider.css" />
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Modernizr JS -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/load_navbar.js"></script>
+        <script src="js/load_footer.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            h2{
+                color: white;
+                font-size: 40px;
+                line-height: 1.5;
+                text-decoration: none;
+                font-family: "Satisfy";
+            }
+            label{
+                color: white;
+                font-size: 20px;
+            }
+            .form-control {
+                font-size: 20px;
+                text-align: center;
+            }
+            .stars{
+                font-size: 30px;
+                color: white;
+            }
+            .btn-red {
+                background-color: red;
+                color: white;
+                font-weight: bold;
+                font-size: 20px; /* Adjust the size as needed */
+                padding: 10px 20px; /* Adjust the padding as needed */
+                border: none;
+                border-radius: 5px; /* Optional: add some rounded corners */
+                width: 100%;
+            }
+            .btn-red:hover {
+                background-color: darkred; /* Optional: change color on hover */
+            }
+            .meal-image{
+              width: 100%;
+            }
+        </style>
+    </head>
+  <body>
+    <div class="fh5co-loader"></div>
+    <div id="page">
+      <!-- Main content -->
+      <div id="fh5co-featured-menu" class="fh5co-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="images/gallery_3.jpeg"
+                class="meal-image"
+                alt="Xiaolongbao"
+              />
+            </div>
+            <div class="col-md-6">
+              <h2>Xiaolongbao</h2>
+              <p>
+                Xiaolongbao, or soup dumplings, are a type of Chinese steamed bun
+                (baozi) from the Jiangnan region, especially associated with Shanghai and Wuxi.
+                They are traditionally filled with pork and a gelatinized meat broth
+                that liquefies when steamed.
+              </p>
+              <form class="order-section">
+                <div class="mb-3">
+                  <label for="quantity" class="form-label">Quantity</label>
+                  <input type="number" class="form-control" id="quantity" min="1" value="1">
+                </div>
+                <div class="mb-3">
+                  <label class="form-check-label" for="portionSize">Portion Size</label>
+                  <div class="form-check">
+                    <input type="radio" id="bigPortion" name="portionSize">
+                    <label for="bigPortion">Big Portion $32.00</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" id="smallPortion" name="portionSize" checked>
+                    <label for="smallPortion">Small Portion $22.00</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="comments" class="form-label">Comments</label>
+                  <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label>Previous Reviews</label>
+                  <div>
+                    <span class="stars">&#9733;</span>
+                    <span class="stars">&#9733;</span>
+                    <span class="stars">&#9733;</span>
+                    <span class="stars">&#9733;</span>
+                    <span class="text-secondary stars">&#9733;</span>
+                    <label>(4/5 stars)</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-red">Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelector('.btn.btn-red').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the form from submitting
+      
+          // Get the values from the form
+          const name = 'Xiaolongbao';
+          const quantity = document.getElementById('quantity').value;
+          const portionSize = document.querySelector('input[name="portionSize"]:checked').nextElementSibling.textContent.trim();
+          const type = portionSize.includes('Big') ? '32.00' : '22.00';
+      
+          // Create the item object
+          const item = {
+            name: name,
+            quantity: quantity,
+            type: type
+          };
+      
+          // Get the existing cart from local storage
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+          // Add the new item to the cart
+          cart.push(item);
+      
+          // Save the updated cart to local storage
+          localStorage.setItem('cart', JSON.stringify(cart));
+      
+          alert('Item added to cart!');
+        });
+      </script>
+  </body>
+</html>

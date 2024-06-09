@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chinese Restaurant - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Free HTML5 Website Template by freehtml5.co"
+    />
+    <meta
+      name="keywords"
+      content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"
+    />
+    <meta name="author" content="freehtml5.co" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/load_navbar.js"></script>
+    <script src="js/load_footer.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .menu-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .menu-buttons a {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 35px;
+        line-height: 1.5;
+        text-decoration: none;
+        font-family: "Satisfy";
+      }
+      .menu-buttons a:hover {
+        color: white;
+      }
+      .fh5co-item-wrap {
+        display: none; /* Initially hide all items */
+      }
+      .fh5co-item-wrap.active {
+        display: block; /* Display items with the active class */
+      }
+      .menu-intro {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fh5co-loader"></div>
+    <div id="page">
+      <div id="fh5co-featured-menu" class="fh5co-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 fh5co-heading animate-box">
+              <h2>Naš Ukusan Meni</h2>
+              <div class="row menu-intro">
+                <div class="col-md-12">
+                  <p>
+                    Istražite naš širok asortiman jela, svako pripremljeno do
+                    savršenstva sa najfinijim sastojcima i strašću za
+                    autentičnošću. Naš meni nudi divan izbor tradicionalne i
+                    savremene kineske kuhinje koja odgovara svakom ukusu. Od
+                    slanih predjela do raskošnih glavnih jela i ukusnih
+                    deserata, za svakoga postoji nešto u čemu može uživati.
+                    Započnite svoj obrok sa našim ukusnim predjelima, kao što su
+                    hrskave prolećne rolnice, ukusne knedle i aromatične supe.
+                    Svako predjelo je dizajnirano da probudi vaše nepce i
+                    pripremi vas za kulinarske užitke koji slede. Za glavno
+                    jelo, izaberite iz širokog izbora jela koja prikazuju bogatu
+                    raznolikost kineske kuhinje. Uživajte u smelim ukusima Kung
+                    Pao piletine, prepustite se sočnoj pekinškoj patki, ili
+                    uživajte u utešnom ukusu Mapo tofua. Naši kuvari koriste
+                    tradicionalne tehnike i sveže sastojke kako bi stvorili jela
+                    koja nisu samo ukusna već i prava reprezentacija kineskih
+                    kulinarskih tradicija. Ako imate još pitanja ili zahteva za
+                    prevođenje, slobodno se obratite!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Add links for selecting menu category -->
+            <div class="menu-buttons" style="margin-bottom: 30px; margin-top: -100px;">
+              <a href="javascript:void(0);" onclick="filterMenu('appetizer')"> Predjelo </a>
+              <a href="javascript:void(0);" onclick="filterMenu('main')"> Glavno jelo </a>
+              <a href="javascript:void(0);" onclick="filterMenu('dessert')"> Dezert </a>
+            </div>
+            <!-- Menu items -->
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_1.jpeg"
+                    class="img-responsive"
+                    alt="Dish 1"
+                  />
+                  <h3>Pekinška Patka</h3>
+                  <span class="fh5co-price">2500.50 RSD</span>
+                  <p>
+                    Pekinška patka je poznato jelo od patke iz Pekinga koje se
+                    priprema još od carske ere. Meso je karakteristično po svojoj
+                    tankoj, hrskavoj koži, dok autentične verzije jela uglavnom
+                    služe kožu sa malo mesa, koje kuvar seče ispred gostiju.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <a href="./KungPaoChicken.html">
+                    <img
+                      src="images/gallery_2.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Kung Pao Piletina</h3>
+                  <span class="fh5co-price">2035 RSD</span>
+                  <p>
+                    Kung Pao piletina je ljuto kinesko jelo koje se priprema
+                    prženjem piletine, kikirikija, povrća i čili papričica.
+                    Klasična Sečuanska verzija uključuje sečuanske biberče, koje
+                    jelu daje karakterističan osećaj peckanja.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="appetizer">
+                <div class="fh5co-item animate-box">
+                  <a href="./Xiaolongbao.html">
+                    <img
+                      src="images/gallery_3.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Xiaolongbao</h3>
+                  <span class="fh5co-price">2420 RSD</span>
+                  <p>
+                    Xiaolongbao, ili knedle sa supom, su vrsta kineske parene
+                    lepinje (baozi) iz regiona Jiangnan, posebno povezane sa
+                    Šangajem i Vuxijem. Tradicionalno su punjene svinjetinom i
+                    želatinizovanim mesnim bujonom koji se otapa prilikom parenja.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="appetizer">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_4.jpeg"
+                    class="img-responsive"
+                    alt="Dish 4"
+                  />
+                  <h3>Dim Sum</h3>
+                  <span class="fh5co-price">2750 RSD</span>
+                  <p>
+                    Dim Sum se odnosi na raznovrsna jela veličine zalogaja koja se
+                    tradicionalno služe u malim parnim korpama ili na malim
+                    tanjirima. Obično se uživa tokom brunča i može uključivati
+                    knedle, lepinje, rolnice i peciva. Uobičajena Dim Sum jela
+                    uključuju Har Gow (knedle sa škampima), Siu Mai (knedle sa
+                    svinjetinom) i Cha Siu Bao (lepinje sa roštilj svinjetinom).
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_5.jpeg"
+                    class="img-responsive"
+                    alt="Dish 5"
+                  />
+                  <h3>Hot Pot</h3>
+                  <span class="fh5co-price">2145 RSD</span>
+                  <p>
+                    Hot Pot je zajedničko jelo gde gosti kuvaju raznovrsne sirove
+                    sastojke kao što su tanko sečeno meso, plodovi mora, povrće i
+                    rezanci u loncu sa ukusnim bujonom koji krčka na stolu. To je
+                    popularno društveno jelo, posebno tokom hladnijih meseci.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_6.jpeg"
+                    class="img-responsive"
+                    alt="Dish 6"
+                  />
+                  <h3>Char Siu</h3>
+                  <span class="fh5co-price">2310 RSD</span>
+                  <p>
+                    Char Siu je svinjetina u kantonskom stilu roštilja koja se
+                    marinira u mešavini meda, začina od pet začina, soja sosa,
+                    hoisin sosa i crvenog fermentisanog pasulja, što joj daje
+                    prepoznatljivu crvenu boju i slatko-slani ukus. Svinjetina se
+                    zatim peče do savršenstva i obično se služi sa pirinčem ili
+                    rezancima.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="dessert">
+                <div class="fh5co-item animate-box">
+                  <a href="./Zongzi.html">
+                    <img
+                      src="images/gallery_7.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Zongzi</h3>
+                  <span class="fh5co-price">2530 RSD</span>
+                  <p>
+                    Zongzi su lepljive pirinčane knedle umotane u bambusove ili
+                    trske listove, koje se obično uživaju tokom Festivala zmajevih
+                    čamaca. Pune se raznovrsnim sastojcima kao što su svinjetina,
+                    slani žumance, pasulj i kestenje. Zongzi mogu biti i slani i
+                    slatki.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="dessert">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_8.jpeg"
+                    class="img-responsive"
+                    alt="Dish 8"
+                  />
+                  <h3>Jianbing</h3>
+                  <span class="fh5co-price">2695 RSD</span>
+                  <p>
+                    Jianbing je popularna kineska ulična hrana slična palačinki.
+                    Sastoji se od tankog testa od pšeničnog ili mung brašna koje
+                    se nanosi na vruću rešetku, a zatim se preliva jajetom, mladim
+                    lukom, korijanderom i raznim nadevima kao što su hoisin sos,
+                    čili pasta i hrskavi wonton trakice. Zatim se presavija i
+                    služi vruće, što ga čini ukusnim i praktičnim zalogajem.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 fh5co-heading animate-box">
+              <div style="text-align: center; margin-top: 20px;">
+                <a href="./Chinese_Restaurant_Menu.pdf" download class="btn btn-primary" style="background-color: red; color: white; font-weight: bold; font-size: 20px; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Preuzmi ceo meni
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      function filterMenu(category) {
+        const items = document.querySelectorAll('.fh5co-item-wrap');
+        items.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+
+      // Show all items by default
+      filterMenu('all');
+    </script>
+  </body>
+</html>

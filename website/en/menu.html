@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chinese Restaurant - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Free HTML5 Website Template by freehtml5.co"
+    />
+    <meta
+      name="keywords"
+      content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"
+    />
+    <meta name="author" content="freehtml5.co" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Modernizr JS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/load_navbar.js"></script>
+    <script src="js/load_footer.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .menu-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .menu-buttons a {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 35px;
+        line-height: 1.5;
+        text-decoration: none;
+        font-family: "Satisfy";
+      }
+      .menu-buttons a:hover {
+        color: white;
+      }
+      .fh5co-item-wrap {
+        display: none; /* Initially hide all items */
+      }
+      .fh5co-item-wrap.active {
+        display: block; /* Display items with the active class */
+      }
+      .menu-intro {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fh5co-loader"></div>
+    <div id="page">
+      <div id="fh5co-featured-menu" class="fh5co-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 fh5co-heading animate-box">
+              <h2>Our Delicious Menu</h2>
+              <div class="row menu-intro">
+                <div class="col-md-12">
+                  <p>
+                    Explore our wide range of dishes, each crafted to perfection
+                    with the finest ingredients and a passion for authenticity.
+                    Our menu offers a delightful array of traditional and
+                    contemporary Chinese cuisine that caters to every palate.
+                    From savory appetizers to sumptuous main courses and
+                    delightful desserts, there’s something for everyone to
+                    enjoy. Start your meal with our delicious appetizers, such
+                    as crispy spring rolls, savory dumplings, and flavorful
+                    soups. Each appetizer is designed to awaken your taste buds
+                    and prepare you for the culinary delights that follow. For
+                    the main course, choose from an extensive selection of
+                    dishes that showcase the rich diversity of Chinese cuisine.
+                    Savor the bold flavors of Kung Pao Chicken, indulge in the
+                    succulent Peking Duck, or enjoy the comforting taste of Mapo
+                    Tofu. Our chefs use traditional techniques and fresh
+                    ingredients to create dishes that are not only delicious but
+                    also a true representation of Chinese culinary traditions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Add links for selecting menu category -->
+            <div class="menu-buttons" style="margin-bottom: 30px; margin-top: -100px;">
+              <a href="javascript:void(0);" onclick="filterMenu('appetizer')"> Appetizers </a>
+              <a href="javascript:void(0);" onclick="filterMenu('main')"> Main Courses </a>
+              <a href="javascript:void(0);" onclick="filterMenu('dessert')"> Desserts </a>
+            </div>
+            <!-- Menu items -->
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_1.jpeg"
+                    class="img-responsive"
+                    alt="Dish 1"
+                  />
+                  <h3>Peking Duck</h3>
+                  <span class="fh5co-price">$20.50</span>
+                  <p>
+                    Peking Duck is a famous duck dish from Beijing that has been
+                    prepared since the imperial era. The meat is characterized by
+                    its thin, crispy skin, with authentic versions of the dish
+                    serving mostly the skin and little meat, sliced in front of
+                    the diners by the cook.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <a href="./KungPaoChicken.html">
+                    <img
+                      src="images/gallery_2.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Kung Pao Chicken</h3>
+                  <span class="fh5co-price">$18.50</span>
+                  <p>
+                    Kung Pao Chicken is a spicy, stir-fried Chinese dish made with
+                    chicken, peanuts, vegetables, and chili peppers. The classic
+                    Sichuan version includes Sichuan peppercorns, which give the
+                    dish its distinctive numbing sensation.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="appetizer">
+                <div class="fh5co-item animate-box">
+                  <a href="./Xiaolongbao.html">
+                    <img
+                      src="images/gallery_3.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Xiaolongbao</h3>
+                  <span class="fh5co-price">$22.00</span>
+                  <p>
+                    Xiaolongbao, or soup dumplings, are a type of Chinese steamed
+                    bun (baozi) from the Jiangnan region, especially associated
+                    with Shanghai and Wuxi. They are traditionally filled with
+                    pork and a gelatinized meat broth that liquefies when steamed.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="appetizer">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_4.jpeg"
+                    class="img-responsive"
+                    alt="Dish 4"
+                  />
+                  <h3>Dim Sum</h3>
+                  <span class="fh5co-price">$25.00</span>
+                  <p>
+                    Dim Sum refers to a variety of bite-sized dishes traditionally
+                    served in small steamer baskets or on small plates. These are
+                    typically enjoyed during brunch and can include dumplings,
+                    buns, rolls, and pastries. Common Dim Sum dishes include Har
+                    Gow (shrimp dumplings), Siu Mai (pork dumplings), and Cha Siu
+                    Bao (barbecue pork buns).
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_5.jpeg"
+                    class="img-responsive"
+                    alt="Dish 5"
+                  />
+                  <h3>Hot Pot</h3>
+                  <span class="fh5co-price">$19.50</span>
+                  <p>
+                    Hot Pot is a communal dish where diners cook a variety of raw
+                    ingredients such as thinly sliced meat, seafood, vegetables,
+                    and noodles in a simmering pot of flavorful broth at the
+                    table. It's a popular social meal, especially during colder
+                    months.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="main">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_6.jpeg"
+                    class="img-responsive"
+                    alt="Dish 6"
+                  />
+                  <h3>Char Siu</h3>
+                  <span class="fh5co-price">$21.00</span>
+                  <p>
+                    Char Siu is a Cantonese-style barbecue pork that is marinated
+                    in a mixture of honey, five-spice powder, soy sauce, hoisin
+                    sauce, and red fermented bean curd, giving it a distinctive
+                    red color and sweet-savory flavor. The pork is then roasted to
+                    perfection and typically served with rice or noodles.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="dessert">
+                <div class="fh5co-item animate-box">
+                  <a href="./Zongzi.html">
+                    <img
+                      src="images/gallery_7.jpeg"
+                      class="img-responsive"
+                      alt="Dish 3"
+                    />
+                  </a>
+                  <h3>Zongzi</h3>
+                  <span class="fh5co-price">$23.00</span>
+                  <p>
+                    Zongzi are sticky rice dumplings wrapped in bamboo or reed
+                    leaves, typically enjoyed during the Dragon Boat Festival.
+                    They are filled with various ingredients such as pork, salted
+                    egg yolk, beans, and chestnuts. Zongzi can be either savory or
+                    sweet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap" data-category="dessert">
+                <div class="fh5co-item animate-box">
+                  <img
+                    src="images/gallery_8.jpeg"
+                    class="img-responsive"
+                    alt="Dish 8"
+                  />
+                  <h3>Jianbing</h3>
+                  <span class="fh5co-price">$24.50</span>
+                  <p>
+                    Jianbing is a popular Chinese street food similar to a crepe.
+                    It consists of a thin wheat or mung bean flour batter spread
+                    on a hot griddle, topped with egg, scallions, cilantro, and
+                    various fillings such as hoisin sauce, chili paste, and
+                    crunchy wonton strips. It's then folded up and served hot,
+                    making it a delicious and portable snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 fh5co-heading animate-box">
+              <div style="text-align: center; margin-top: 20px;">
+                <a href="./Chinese_Restaurant_Menu.pdf" download class="btn btn-primary" style="background-color: red; color: white; font-weight: bold; font-size: 20px; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Download Whole Menu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      function filterMenu(category) {
+        const items = document.querySelectorAll('.fh5co-item-wrap');
+        items.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+
+      // Show all items by default
+      filterMenu('all');
+    </script>
+  </body>
+</html>
